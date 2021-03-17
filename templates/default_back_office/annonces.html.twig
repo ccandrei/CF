@@ -1,0 +1,50 @@
+{% extends 'default_back_office/base.html.twig' %}
+
+{% block title %}Hello DefautlBackOfficeController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="col">
+            <h1>Annonces</h1>
+            <table>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Titre
+                    </th>
+                    <th>
+                        Prix
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Date de creation
+                    </th>
+
+                </tr>
+                {% for annonce in annonces %}
+                    <tr>
+                        <td>
+                            {{ annonce.id }}
+                        </td>
+                        <td>
+                            {{ annonce.titre }}
+                        </td>
+                        <td>
+                            {{ annonce.prix }}
+                        </td>
+                        <td>
+                            {{ annonce.description|raw }}
+                        </td>
+                        <td>
+                            {{ annonce.dateCreation|date }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}

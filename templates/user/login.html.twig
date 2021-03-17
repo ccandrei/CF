@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col" style="text-align: center; align-items: center; width: 300px">
+                <h2>Circle Fishers</h2>
+                <p>Connectez-vous pour gérer votre marketplace</p>
+                <hr>
+                <form method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" name="_username" id="username">
+
+                    <label for="password">Password: </label>
+                    <input type="password" name="_password" id="password">
+
+                    <button type="submit" class="btn btn-primary">Login!</button>
+                </form>
+                <div>
+                    <a class="btn btn-primary" href="{{ path('user_register') }}" role="button">Inscription</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+{% block title %}Login {% endblock %}

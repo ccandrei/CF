@@ -1,0 +1,21 @@
+{% extends 'default_back_office/base.html.twig' %}
+
+{% block title %}Hello DefautlBackOfficeController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="col">
+            <h1>Bonjour nom_utilisateur</h1>
+            <p>Voici ce qui s'es passe'sur votre marketplace aujourdu'hui </p>
+            <hr>
+            <div>
+                <img src="http://placehold.it/140x100" alt="n°-commandes">
+                <b>{{ random(2000, 10000) }}Commande(s)
+                <img src="http://placehold.it/140x100" alt="n°-utilisateurs">
+                {{ random(10000, 100000) }}Utilisateur(s)
+                <img src="http://placehold.it/140x100" alt="n°-annonces">
+                    {{ random(10000, 20000) }}Annonce(s)</b>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,32 @@
+body {
+    background-color: #DDDDDD;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.header {
+    background-color: #162A27;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.btn-user {
+    position: absolute;
+    right: 10px
+}
+
+.btn-primary {
+    background-color: #56ac9d;
+    border-style: none;
+}
+
+.btn-primary:hover{
+    background-color: #AAAAAA;
+}
+
+.main {
+    padding-top: 10px;
+}

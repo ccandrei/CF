@@ -1,0 +1,46 @@
+nav {
+    margin-top: 2%;
+}
+
+.dropdown {
+    padding-right: 10px
+}
+
+.container {
+    margin-top: 2%
+}
+
+.jumbotron {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2%;
+
+}
+body{
+    background-color: #dfdfdf;
+}
+.header{
+    background-color: #162A27;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.footer {
+    background-color:#162A27 ;
+    color: #DDDDDD;
+}
+
+a {
+    color: #DDDDDD;
+}
+.col-sm-3 {
+    margin: auto;
+}
+
+.row{
+    margin-top: 1%;
+}
+
+.btn-primary{
+    background-color: #138496;
+}

@@ -1,0 +1,63 @@
+{% extends 'default_back_office/base.html.twig' %}
+
+{% block title %}Hello DefautlBackOfficeController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="col">
+            <h1>Transactions</h1>
+
+            <table>
+                <tr>
+                    <th>
+                        Numéro
+                    </th>
+                    <th>
+                        Statut
+                    </th>
+                    <th>
+                        Date de creation
+                    </th>
+                </tr>
+                {% for transaction in transactions %}
+                    <tr>
+                        <td>
+                            {{ transaction.numeroCommande }}
+                        </td>
+                        <td>
+                            {{ transaction.statut }}
+                        </td>
+                        <td>
+                            {{ transaction.dateCreation|date }}
+                        </td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <th>
+                        Utilisateur
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Date de creation
+                    </th>
+                </tr>
+                {% for user in users %}
+                    <tr>
+                        <td>
+                            {{ user.username }}
+                        </td>
+                        <td>
+                            {{ user.email }}
+                        </td>
+                        <td>
+                            {{ user.dateCreation|date }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+    </div>
+{% endblock %}

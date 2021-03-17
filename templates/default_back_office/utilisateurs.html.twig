@@ -1,0 +1,37 @@
+{% extends 'default_back_office/base.html.twig' %}
+
+{% block title %}Hello DefautlBackOfficeController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="col">
+            <h1>Utisilateurs</h1>
+            <table>
+                <tr>
+                    <th>
+                        Utilisateur
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Date de creation
+                    </th>
+                </tr>
+                {% for user in users %}
+                    <tr>
+                        <td>
+                            {{ user.username }}
+                        </td>
+                        <td>
+                            {{ user.email }}
+                        </td>
+                        <td>
+                            {{ user.dateCreation|date }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}
